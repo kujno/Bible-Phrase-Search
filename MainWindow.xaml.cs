@@ -1,19 +1,88 @@
-﻿using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
 namespace Bible_Word_Finder
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+
+    enum SearchIn
+    {
+        Bible = 1,
+        Book = 2,
+        Chapter = 3
+    }
+
+    enum Book
+    {
+        Genesis = 1,
+        Exodus,
+        Leviticus,
+        Numbers,
+        Deuteronomy,
+        Joshua,
+        Judges,
+        Ruth,
+        FirstSamuel,
+        SecondSamuel,
+        FirstKings,
+        SecondKings,
+        FirstChronicles,
+        SecondChronicles,
+        Ezra,
+        Nehemiah,
+        Esther,
+        Job,
+        Psalms,
+        Proverbs,
+        Ecclesiastes,
+        SongOfSolomon,
+        Isaiah,
+        Jeremiah,
+        Lamentations,
+        Ezekiel,
+        Daniel,
+        Hosea,
+        Joel,
+        Amos,
+        Obadiah,
+        Jonah,
+        Micah,
+        Nahum,
+        Habakkuk,
+        Zephaniah,
+        Haggai,
+        Zechariah,
+        Malachi,
+        Matthew,
+        Mark,
+        Luke,
+        John,
+        Acts,
+        Romans,
+        FirstCorinthians,
+        SecondCorinthians,
+        Galatians,
+        Ephesians,
+        Philippians,
+        Colossians,
+        FirstThessalonians,
+        SecondThessalonians,
+        FirstTimothy,
+        SecondTimothy,
+        Titus,
+        Philemon,
+        Hebrews,
+        James,
+        FirstPeter,
+        SecondPeter,
+        FirstJohn,
+        SecondJohn,
+        ThirdJohn,
+        Jude,
+        Revelation
+    }
+
     public partial class MainWindow : Window
     {
         public MainWindow()
