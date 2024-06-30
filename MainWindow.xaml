@@ -5,17 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Bible_Word_Finder"
         mc:Ignorable="d"
-        Title="Bible Word Finder" Height="450" Width="800">
+        Title="Bible Phrase Finder" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="61*" />
+            <RowDefinition Height="355*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel>
+        <StackPanel Margin="0,0,0,61" Grid.RowSpan="2">
             <Menu>
                 <MenuItem Header="File">
                     <MenuItem Header="Open" Click="menu_open_click" />
@@ -26,25 +27,25 @@
             </Menu>
         </StackPanel>
 
-        <Grid Grid.Row="1">
+        <Grid Grid.Row="1" Grid.RowSpan="2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="120px" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
             <StackPanel Grid.Column="0">
-                <GroupBox Name="comboBox_search_in" Header="Search in:">
-                    <ComboBox/>
+                <GroupBox Name="groupBox_search_in" Header="Search in:">
+                    <ComboBox Name="comboBox_search_in" DropDownClosed="comboBox_search_in_dropDownClosed" />
                 </GroupBox>
 
-                <GroupBox Name="comboBox_book" Header="Book:">
-                    <ComboBox/>
+                <GroupBox Name="groupBox_book" Header="Book:">
+                    <ComboBox Name="comboBox_book" DropDownClosed="comboBox_book_dropDownClosed" />
                 </GroupBox>
-                <GroupBox Name="comboBox_chapter" Header="Chapter:">
-                    <ComboBox/>
+                <GroupBox Name="groupBox_chapter" Header="Chapter:">
+                    <ComboBox Name="comboBox_chapter" />
                 </GroupBox>
             </StackPanel>
 
