@@ -1,0 +1,61 @@
+﻿<Window x:Class="Bible_Word_Finder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bible_Word_Finder"
+        mc:Ignorable="d"
+        Title="Bible Word Finder" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel>
+            <Menu>
+                <MenuItem Header="File">
+                    <MenuItem Header="Open" Click="menu_open_click" />
+                    <MenuItem Header="Exit" Click="menu_exit_click" />
+                </MenuItem>
+
+                <MenuItem x:Name="menu_about" Header="About" Click="menu_about_click" />
+            </Menu>
+        </StackPanel>
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0">
+                <GroupBox Name="comboBox_search_in" Header="Search in:">
+                    <ComboBox/>
+                </GroupBox>
+
+                <GroupBox Name="comboBox_book" Header="Book:">
+                    <ComboBox/>
+                </GroupBox>
+                <GroupBox Name="comboBox_chapter" Header="Chapter:">
+                    <ComboBox/>
+                </GroupBox>
+            </StackPanel>
+
+            <StackPanel Grid.Column="1">
+                <GroupBox Header="Searched phrase:">
+                    <TextBox Name="textBox_searched_phrase" />
+                </GroupBox>
+                <GroupBox Header="Search results:">
+                    <TextBlock Name="textBlock_search_results" />
+                </GroupBox>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
