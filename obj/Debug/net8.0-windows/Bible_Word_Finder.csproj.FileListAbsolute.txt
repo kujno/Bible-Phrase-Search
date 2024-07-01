@@ -13,9 +13,9 @@ C:\Users\matej\source\repos\Bible_Word_Finder\Bible_Word_Finder\obj\Debug\net8.0
 C:\Users\matej\source\repos\Bible_Word_Finder\Bible_Word_Finder\obj\Debug\net8.0-windows\Bible_Word_Finder.AssemblyInfoInputs.cache
 C:\Users\matej\source\repos\Bible_Word_Finder\Bible_Word_Finder\obj\Debug\net8.0-windows\Bible_Word_Finder.AssemblyInfo.cs
 C:\Users\matej\source\repos\Bible_Word_Finder\Bible_Word_Finder\obj\Debug\net8.0-windows\Bible_Word_Finder.csproj.CoreCompileInputs.cache
+C:\Users\matej\source\repos\Bible_Word_Finder\Bible_Word_Finder\obj\Debug\net8.0-windows\Bible_Word_Finder.sourcelink.json
 C:\Users\matej\source\repos\Bible_Word_Finder\Bible_Word_Finder\obj\Debug\net8.0-windows\Bible_Word_Finder.dll
 C:\Users\matej\source\repos\Bible_Word_Finder\Bible_Word_Finder\obj\Debug\net8.0-windows\refint\Bible_Word_Finder.dll
 C:\Users\matej\source\repos\Bible_Word_Finder\Bible_Word_Finder\obj\Debug\net8.0-windows\Bible_Word_Finder.pdb
 C:\Users\matej\source\repos\Bible_Word_Finder\Bible_Word_Finder\obj\Debug\net8.0-windows\Bible_Word_Finder.genruntimeconfig.cache
 C:\Users\matej\source\repos\Bible_Word_Finder\Bible_Word_Finder\obj\Debug\net8.0-windows\ref\Bible_Word_Finder.dll
-C:\Users\matej\source\repos\Bible_Word_Finder\Bible_Word_Finder\obj\Debug\net8.0-windows\Bible_Word_Finder.sourcelink.json

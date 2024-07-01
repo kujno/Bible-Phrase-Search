@@ -88,7 +88,9 @@ namespace Bible_Word_Finder
         private SearchInOptions? searchInOption;
         private BookOptions? bookOption;
         private byte[] bookChaptersNumber = {50, 40, 27, 36, 34, 24, 21, 4, 31, 24, 22, 25, 29, 36, 10, 13, 10, 42, 150, 31, 12, 8, 66, 52, 5, 48, 12, 14, 3, 9, 1, 4, 7, 3, 3, 3, 2, 14, 4, 28, 16, 24, 21, 28, 16, 16, 13, 6, 6, 4, 4, 5, 3, 6, 4, 3, 1, 13, 5, 5, 3, 5, 1, 1, 1, 22};
-        
+        string? BibleFileName;
+
+
         public MainWindow()
         {
             InitializeComponent();
@@ -120,17 +122,31 @@ namespace Bible_Word_Finder
 
         private void menu_open_click(object sender, RoutedEventArgs e)
         {
+            // Configure open file dialog box
+            var dialog = new Microsoft.Win32.OpenFileDialog();
+            dialog.FileName = "Bible"; // Default file name
+            dialog.DefaultExt = ".xml"; // Default file extension
+            dialog.Filter = "Beblia XML documents (.xml)|*.xml"; // Filter files by extension
 
+            // Show open file dialog box
+            bool? result = dialog.ShowDialog();
+
+            // Process open file dialog box results
+            if (result == true)
+            {
+                // Open document
+                BibleFileName = dialog.FileName;
+            }
         }
 
         private void menu_exit_click(object sender, RoutedEventArgs e)
         {
-
+            Application.Current.Shutdown();
         }
 
         private void menu_about_click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("Purpose of this application is to help you study The Bible.\nThis application is free.\nThis application is developed by Matej Kujnisch.");
         }
 
         private void comboBox_search_in_dropDownClosed(object sender, EventArgs e)
@@ -171,6 +187,11 @@ namespace Bible_Word_Finder
 
                 groupBox_chapter.Visibility = Visibility.Visible;
             }
+        }
+
+        private void comboBox_search_in_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

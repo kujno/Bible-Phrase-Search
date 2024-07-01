@@ -12,11 +12,10 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto" />
-            <RowDefinition Height="61*" />
-            <RowDefinition Height="355*"/>
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <StackPanel Margin="0,0,0,61" Grid.RowSpan="2">
+        <StackPanel>
             <Menu>
                 <MenuItem Header="File">
                     <MenuItem Header="Open" Click="menu_open_click" />
@@ -38,7 +37,7 @@
 
             <StackPanel Grid.Column="0">
                 <GroupBox Name="groupBox_search_in" Header="Search in:">
-                    <ComboBox Name="comboBox_search_in" DropDownClosed="comboBox_search_in_dropDownClosed" />
+                    <ComboBox Name="comboBox_search_in" DropDownClosed="comboBox_search_in_dropDownClosed" SelectionChanged="comboBox_search_in_SelectionChanged" />
                 </GroupBox>
 
                 <GroupBox Name="groupBox_book" Header="Book:">
