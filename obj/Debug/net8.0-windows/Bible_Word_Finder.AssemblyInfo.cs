@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bible_Word_Finder")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+445dc926b57638602ef74f245bfc8ec89002578e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+867bd5efcf37066aba15674f96ff8f7518af2de4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bible_Word_Finder")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bible_Word_Finder")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

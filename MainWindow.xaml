@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Bible_Word_Finder"
         mc:Ignorable="d"
-        Title="Bible Phrase Finder" Height="450" Width="800">
+        Title="Bible Phrase Finder" Height="470" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
@@ -36,25 +36,32 @@
             </Grid.ColumnDefinitions>
 
             <StackPanel Grid.Column="0">
-                <GroupBox Name="groupBox_search_in" Header="Search in:">
-                    <ComboBox Name="comboBox_search_in" DropDownClosed="comboBox_search_in_dropDownClosed" SelectionChanged="comboBox_search_in_SelectionChanged" />
+                <GroupBox Name="groupBox_search_in" Header="Search in:" Margin="0, 2, 0, 0">
+                    <ComboBox Name="comboBox_search_in" DropDownClosed="comboBox_search_in_dropDownClosed" />
                 </GroupBox>
-
+                <GroupBox Name="groupBox_testament" Header="Testament:">
+                    <ComboBox Name="comboBox_testament" DropDownClosed="comboBox_testament_dropDownClosed" />
+                </GroupBox>
                 <GroupBox Name="groupBox_book" Header="Book:">
                     <ComboBox Name="comboBox_book" DropDownClosed="comboBox_book_dropDownClosed" />
                 </GroupBox>
                 <GroupBox Name="groupBox_chapter" Header="Chapter:">
-                    <ComboBox Name="comboBox_chapter" />
+                    <ComboBox Name="comboBox_chapter" DropDownClosed="comboBox_chapter_dropDownClosed" />
                 </GroupBox>
             </StackPanel>
 
-            <StackPanel Grid.Column="1">
+            <StackPanel Grid.Column="1" Margin="10, 2, 0, 0">
                 <GroupBox Header="Searched phrase:">
                     <TextBox Name="textBox_searched_phrase" />
                 </GroupBox>
-                <GroupBox Header="Search results:">
-                    <TextBlock Name="textBlock_search_results" />
+                <GroupBox Header="Search results:" Height="320px">
+                    <ScrollViewer Height="320px">
+                        <Run Name="textBlock_search_results"/>
+                    </ScrollViewer>
                 </GroupBox>
+                <Button Width="50px" Height="22px" HorizontalAlignment="Right" Margin="10" Click="button_search_click">
+                    Search
+                </Button>
             </StackPanel>
         </Grid>
     </Grid>
