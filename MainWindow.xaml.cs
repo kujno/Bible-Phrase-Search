@@ -240,7 +240,7 @@ namespace Bible_Word_Finder
             {
                 return;
             }
-            textBlock_search_results.   Text = phraseSearcher.Search(BibleXml, (SearchInOptions)searchInOption, bookOption, chapter, searchedPhrase, testamentOption);
+            textBlock_search_results.Text = phraseSearcher.Search(BibleXml, (SearchInOptions)searchInOption, bookOption, chapter, searchedPhrase, testamentOption);
         }
 
         private void comboBox_chapter_dropDownClosed(object sender, EventArgs e)
